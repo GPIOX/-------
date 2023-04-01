@@ -26,3 +26,5 @@
 如果报错，请先检查网络设置，
 + 若网络设置okay，请手动在浏览器登录Google scholar，检查IP是否被封
 + **请定期更新对应浏览器的.exe文件，确保版本匹配指定浏览器**
++ Edge浏览器的msedgedriver.exe下载地址：
+  https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
