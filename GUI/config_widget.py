@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'config_widget.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(488, 248)
+        self.proxy = QtWidgets.QLabel(Form)
+        self.proxy.setGeometry(QtCore.QRect(20, 30, 91, 21))
+        font = QtGui.QFont()
+        font.setFamily("宋体")
+        font.setPointSize(14)
+        self.proxy.setFont(font)
+        self.proxy.setObjectName("proxy")
+        self.proxy_input = QtWidgets.QLineEdit(Form)
+        self.proxy_input.setGeometry(QtCore.QRect(110, 30, 311, 20))
+        self.proxy_input.setObjectName("proxy_input")
+        self.save_path = QtWidgets.QLabel(Form)
+        self.save_path.setGeometry(QtCore.QRect(20, 70, 91, 21))
+        font = QtGui.QFont()
+        font.setFamily("宋体")
+        font.setPointSize(14)
+        self.save_path.setFont(font)
+        self.save_path.setObjectName("save_path")
+        self.save_path_input = QtWidgets.QLineEdit(Form)
+        self.save_path_input.setGeometry(QtCore.QRect(110, 70, 311, 20))
+        self.save_path_input.setObjectName("save_path_input")
+        self.browser_path = QtWidgets.QLabel(Form)
+        self.browser_path.setGeometry(QtCore.QRect(20, 150, 111, 21))
+        font = QtGui.QFont()
+        font.setFamily("宋体")
+        font.setPointSize(14)
+        self.browser_path.setFont(font)
+        self.browser_path.setObjectName("browser_path")
+        self.executable_path_input = QtWidgets.QLineEdit(Form)
+        self.executable_path_input.setGeometry(QtCore.QRect(130, 150, 291, 20))
+        self.executable_path_input.setObjectName("executable_path_input")
+        self.browser_select = QtWidgets.QLabel(Form)
+        self.browser_select.setGeometry(QtCore.QRect(20, 110, 111, 21))
+        font = QtGui.QFont()
+        font.setFamily("宋体")
+        font.setPointSize(14)
+        self.browser_select.setFont(font)
+        self.browser_select.setObjectName("browser_select")
+        self.browser_select_comboBox = QtWidgets.QComboBox(Form)
+        self.browser_select_comboBox.setGeometry(QtCore.QRect(130, 110, 111, 22))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(11)
+        self.browser_select_comboBox.setFont(font)
+        self.browser_select_comboBox.setObjectName("browser_select_comboBox")
+        self.browser_select_comboBox.addItem("")
+        self.browser_select_comboBox.addItem("")
+        self.save_config = QtWidgets.QPushButton(Form)
+        self.save_config.setGeometry(QtCore.QRect(110, 200, 75, 23))
+        font = QtGui.QFont()
+        font.setFamily("Agency FB")
+        font.setPointSize(12)
+        self.save_config.setFont(font)
+        self.save_config.setObjectName("save_config")
+        self.cancel = QtWidgets.QPushButton(Form)
+        self.cancel.setGeometry(QtCore.QRect(310, 200, 75, 23))
+        font = QtGui.QFont()
+        font.setFamily("Agency FB")
+        font.setPointSize(12)
+        self.cancel.setFont(font)
+        self.cancel.setObjectName("cancel")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.proxy.setText(_translate("Form", "代理端口："))
+        self.save_path.setText(_translate("Form", "存储路径："))
+        self.browser_path.setText(_translate("Form", "浏览器路径："))
+        self.browser_select.setText(_translate("Form", "浏览器选择："))
+        self.browser_select_comboBox.setItemText(0, _translate("Form", "Edge"))
+        self.browser_select_comboBox.setItemText(1, _translate("Form", "Chrome"))
+        self.save_config.setText(_translate("Form", "保存"))
+        self.cancel.setText(_translate("Form", "取消"))
+

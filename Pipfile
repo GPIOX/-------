@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.douban.com/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pyinstaller = "*"
+pyqt5 = "*"
+selenium = "*"
+requests = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
+python_full_version = "3.7.0"
