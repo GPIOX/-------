@@ -4,7 +4,7 @@ version:
 Author: Cai Weichao
 Date: 2023-02-10 16:52:13
 LastEditors: Cai Weichao
-LastEditTime: 2023-04-01 16:14:13
+LastEditTime: 2023-07-28 16:19:34
 '''
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
@@ -13,7 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 def get_bib_format(executable_path, paper_name, save_path, former_select):
     options = webdriver.EdgeOptions()
-    options.add_argument('--headless')
+    # options.add_argument('--headless')
     options.add_argument('--disable-gpu') # 上面代码就是为了将Chrome不弹出界面
     options.add_argument('--incognito') #无痕隐身模式
     options.add_argument("disable-cache") #禁用缓存
@@ -21,10 +21,12 @@ def get_bib_format(executable_path, paper_name, save_path, former_select):
     options.add_argument('disable-infobars')
     options.add_experimental_option('excludeSwitches', ['enable-automation']) # 设置开发者模式
     options.add_experimental_option('excludeSwitches', ['enable-logging'])    
+    options.add_experimental_option('useAutomationExtension', False)    
 
     # 使用edge浏览器
     driver = webdriver.Edge(options=options, executable_path=executable_path)
-    driver.get('https://0-scholar-google-com.brum.beds.ac.uk/schhp?hl=zh-CN')
+    # driver.get('https://0-scholar-google-com.brum.beds.ac.uk/schhp?hl=zh-CN')
+    driver.get('https://scholar.google.com/')
 
     wait = WebDriverWait(driver, 20)
 
